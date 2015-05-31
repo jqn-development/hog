@@ -1,0 +1,34 @@
+body {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* unvisited link */
+a:link {
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+/* selected link */
+a:active {
+  text-decoration: none;
+}
+
+/* mouse over link logo-top */
+.navbar-default .navbar-brand {
+  color: red;
+}
+
+/* mouse over link menu */
+.navbar-default .navbar-nav > li > a:hover {
+  color: red;
+}
