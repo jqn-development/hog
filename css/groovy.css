@@ -636,6 +636,7 @@ form .row:first-child .floating-label-form-group {
 /* Modals */
 .testimonial-modal p {
   font-size: 1.5em;
+  text-align: justify;
 }
 
 .testimonial-modal img {
