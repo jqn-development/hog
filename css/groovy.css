@@ -23,17 +23,27 @@ html {
   .navbar {
     border-bottom: 1px solid rgba(245, 245, 245, 0.8);
     font-family: 'Rajdhani', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.5em;
     letter-spacing: 1px;
     padding: 20px 0;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
-
   .top-nav-collapse {
     padding: 0;
   }
+  .navbar-nav > li > a {
+    font-size: 1em !important;
+  }
+}
+
+.navbar-nav {
+  margin-top: 0;
+}
+
+.navbar-nav > li > a {
+  font-size: 1.5em;
 }
 
 .navbar-default {
@@ -43,6 +53,11 @@ html {
 .logo-top {
   /*font-family: 'BN Expoo', sans-serif;*/
   font-size: 1.4em;
+}
+
+.no-gutter > [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .intro-section {
@@ -116,7 +131,7 @@ html {
 
 .about-section p {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 1.9em;
+  font-size: 2em;
   line-height: 2em;
   text-align: left;
 }
@@ -153,8 +168,9 @@ html {
 .services-section h1 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 4em;
-  line-height: 1em;
   color: black;
+  line-height: 1em;
+  text-align: left;
 }
 
 .services-section p {
@@ -166,6 +182,7 @@ html {
 .services-list {
   padding-top: 4em;
 }
+
 /**************************/
 
 .testimonials-section {
@@ -182,24 +199,184 @@ html {
   vertical-align: middle;
 }
 
+.testimonials-body {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.testimonials-section .row {
+  margin: 0;
+}
 .testimonials-section h1 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 4em;
   line-height: 1em;
   color: black;
+  margin-bottom: 0.6em
 }
 
 .testimonials-section h2 {
   font-size: 2em;
   line-height: 1em;
   color: black;
+  padding-left: 30%;
+}
+
+.testimonials-section a {
+  color: #f05f40;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
 }
 
 .testimonials-section p {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 2em;
-  line-height: 2em;
+  font-size: 1.5em;
+  line-height: 1em;
 }
+
+
+.testimonial-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.testimonial-box .testimonial-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(240,95,64,.9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.testimonial-box .testimonial-box-caption .testimonial-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.testimonial-box .testimonial-box-caption .testimonial-box-caption-content .couple,
+.testimonial-box .testimonial-box-caption .testimonial-box-caption-content .wedding-date {
+    padding: 0 15px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.testimonial-box .testimonial-box-caption .testimonial-box-caption-content .couple {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.testimonial-box .testimonial-box-caption .testimonial-box-caption-content .wedding-date {
+    font-size: 18px;
+}
+
+.testimonial-box:hover .testimonial-box-caption {
+    opacity: 1;
+}
+
+@media(min-width:768px) {
+    .testimonial-box .testimonial-box-caption .testimonial-box-caption-content .couple {
+        font-size: 16px;
+    }
+
+    .testimonial-box .testimonial-box-caption .testimonial-box-caption-content .wedding-date {
+        font-size: 22px;
+    }
+}
+
+.testimonial-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.testimonial-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.testimonial-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.testimonial-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.testimonial-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.testimonial-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.testimonial-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.testimonial-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.testimonial-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.text-faded {
+    color: rgba(255,255,255,.7);
+}
+
+/*.img-container {
+    width: 418px;
+    height: 253px;
+    overflow: hidden;
+}
+.img-container img {
+    width: 100%;
+}*/
 
 /**************************/
 
@@ -226,8 +403,8 @@ html {
 
 .contact-section button {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 2.5em;
+  line-height: 1.5em;
 }
 
 /**************************/
@@ -328,7 +505,7 @@ footer a:hover {
   position: relative;
   top: 1.5em;
   margin: 0;
-  font-size: .85em;
+  font-size: 1em;
   line-height: 1.764705882em;
   vertical-align: middle;
   vertical-align: baseline;
@@ -399,24 +576,6 @@ form .row:first-child .floating-label-form-group {
   -moz-animation-timing-function: linear;
 }
 
-@media(min-width:600px) {
-  .description {
-    font-size: 40px;
-    font-weight: 400;
-    color: #fff;
-  }
-
-  .btn-circle {
-    color: #fff;
-    border: 2px solid #fff;
-  }
-
-  .btn-circle:hover {
-    color: #fff;
-  }
-
-}
-
 /* Button Animation */
 @-webkit-keyframes pulse {
   0 {
@@ -451,4 +610,117 @@ form .row:first-child .floating-label-form-group {
     transform: scale(1);
   }
 }
-/*****************************/
+/**********************/
+
+.a:focus,.a:active:focus,.a.active:focus,
+.a.focus,.a:active.focus,.a.active.focus {
+    outline: none;
+    /*text-decoration: none;*/
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none;
+    /*text-decoration: none;*/
+}
+
+.btn-link {
+  border: 1px solid #B5B0B0;
+  background-color: #fff;
+  width: 180px;
+  color: #000;
+  height: 180px;
+  border-radius: 0;
+}
+
+/* Modals */
+.testimonial-modal p {
+  font-size: 1.5em;
+}
+
+.testimonial-modal img {
+  margin: 0 auto;
+}
+
+.testimonial-modal strong {
+  font-size: 1.5em;
+}
+
+.testimonial-modal .btn {
+  font-size: 1.5em;
+}
+/* Media Queries */
+@media(min-width:600px) {
+  .description {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .btn-circle {
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  .btn-circle:hover {
+    color: #fff;
+  }
+
+}
+
+@media (min-width:964px) {
+  .testimonials-body {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+/* For all mobile devices */
+@media (max-width: 719px) {
+  .intro-section .img-responsive {
+  max-width: 100%;
+  }
+
+  .about-section p {
+    font-size: 1.5em;
+  }
+
+  .about-section img {
+    padding-top: 0;
+  }
+
+  .services-section p {
+    font-size: 1.5em;
+  }
+
+  .testimonials-body {
+    padding: 0;
+  }
+
+  .social-section h1 {
+    font-size: 3em;
+  }
+  .social-section p {
+    font-size: 1.5em;
+  }
+
+  .social-section .hog-brand span {
+    font-size: 1em;
+  }
+}
+
+/* For tablets */
+@media (min-width: 720px) and (max-width: 963px) {
+  .logo-top {
+    font-size: 1em;
+  }
+
+  .testimonials-body {
+    padding: 0;
+  }
+}
+
+/* For smaller screens */
+@media (max-width: 719px) {
+
+}
