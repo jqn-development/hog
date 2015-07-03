@@ -446,7 +446,7 @@
             <div class="modal-body">
               <h2>Christy & Victor</h2>
               <hr class="star-primary">
-              <img src="img/christy-victor" class="img-responsive img-centered" alt="">
+              <img src="img/christy-victor.jpg" class="img-responsive img-centered" alt="">
               <p>
                 Luda and Serge went above and beyond our expectations.
                 They were very professional, organized and personable.
@@ -527,7 +527,7 @@
                 They both were very professional, punctual, friendly and helpful! They played the
                 best songs to keep the party going, and listened to all of our requests.
                 I would highly recommend them to everybody who's about to have any kind of party and want
-                professionalism, DJ's with great personalities and a FUN night!! Wes and Viktoria stull + family
+                professionalism, DJ's with great personalities and a FUN night!! Wes and Viktoria stull + family.
               </p>
               <ul class="list-inline item-details">
                 <li>
