@@ -446,7 +446,7 @@
             <div class="modal-body">
               <h2>Christy & Victor</h2>
               <hr class="star-primary">
-              <img src="img/christy-victor.jpg" class="img-responsive img-centered" alt="">
+              <img src="img/christy-victor-thumb.jpg" class="img-responsive img-centered" alt="">
               <p>
                 Luda and Serge went above and beyond our expectations.
                 They were very professional, organized and personable.
