@@ -1,3 +1,0 @@
-<footer>
-  jQN.io
-</footer>
