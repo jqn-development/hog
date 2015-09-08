@@ -1,3 +1,6 @@
+<?php 
+require('cms/includes/config.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -109,15 +112,13 @@
         <div class="row">
           <div class="col-lg-6 hog-welcome">
             <h1>Welcome</h1>
-            <p>
-              Thank you for visiting our webpage. We know how important
-              choosing a DJ is and we pride ourselves with 25 years combined
-              experience in the wedding and entertainment industry. We are
-              a member of the <span class="bbb">BBB</span> with an A rating and carry
-              liability insurance for all venues. We service Colorado Springs,
-              Denver and all surrounding areas. For availability and bookings
-              please contact us.
-            </p>
+            <?php
+            $about = mysql_query("SELECT * FROM pages WHERE pageID='2'");
+
+            $about_section = mysql_fetch_object($about);
+
+            echo '<p>' . $about_section->pageCont . '</p>';
+            ?>
           </div>
           <div class="col-lg-6">
             <img src="img/dj-luda.jpg"/>
@@ -147,13 +148,13 @@
             <h1>Services</h1>
           </div>
           <div class="col-lg-12 text-justify">
-            <p>
-              In your search to find a Wedding DJ, you have only one chance to get it right.
-              A great DJ will invest many more hours into the planning & preparation of
-              your big day. A lot of the weddings we've been part of, have been 4-6 hours from
-              start to finish, yet often required 20 or more hours to prepare for.<br/>
-              We have what it takes to make your special event a success!
-            </p>
+            <?php
+            $services = mysql_query("SELECT * FROM pages WHERE pageID='2'");
+
+            $services_section = mysql_fetch_object($services);
+
+            echo '<p>' . $services_section->pageCont . '</p>';
+            ?>
           </div>
         </div>
         <div class="row services-list">
@@ -344,7 +345,13 @@
         <div class="row">
           <div class="col-lg-12">
             <h1>719-937-65DJ</h1>
-            <p class="hog-brand">Contact <span>House of Groove DJ</span> to book your next event.</p>
+            <?php
+              $social = mysql_query("SELECT * FROM pages WHERE pageID='4'");
+
+              $social_section = mysql_fetch_object($social);
+
+              echo '<p class="hog-brand">' . $social_section->pageCont . '</p>';
+            ?>
             <a href="https://www.facebook.com/houseofgrooveprodj" class="btn btn-default btn-lg" target="_blank">
               <i class="fa fa-facebook-square fa-fw"></i><span class="network-name">Follow us on Facebook</span>
             </a>
@@ -602,6 +609,7 @@
 
   <!-- Custom Theme JavaScript -->
   <script type="text/javascript" src="js/floatlabel.js"></script>
+  <script type="text/javascript" src="js/groovy.js"></script>
 
 </body>
 

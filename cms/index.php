@@ -12,7 +12,7 @@ require('includes/config.php'); ?>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo SITETITLE;?></title>
-<link href="<?php echo DIR;?>style/style.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo DIR;?>cms/style/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="wrapper">
@@ -36,7 +36,6 @@ require('includes/config.php'); ?>
 	<!-- END NAV -->
 
 	<div id="content">
-
 	<?php
 	//if no page clicked on load home page default to it of 1
 	if(!isset($_GET['p'])){
@@ -58,7 +57,7 @@ require('includes/config.php'); ?>
 	</div><!-- close content div -->
 
 	<div id="footer">
-			<div class="copy">&copy; <?php echo SITETITLE.' '. date('Y');?> </div>
+		 <div class="copy">&copy; <?php echo SITETITLE.' '. date('Y');?> </div>
 	</div><!-- close footer -->
 </div><!-- close wrapper -->
 
