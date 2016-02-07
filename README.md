@@ -1,1 +1,3 @@
-#HOG CMS
+# BootStrap Grunt Sass Boilerplate
+
+
