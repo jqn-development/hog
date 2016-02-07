@@ -1,0 +1,12 @@
+# Node and bower
+node_modules
+bower_components
+componets
+
+# Grunt intermediate storage
+.grunt
+
+*/.DS_Store
+.DS_Store
+.sass-cache
+*.css.map
