@@ -599,9 +599,14 @@ require('cms/includes/config.php');
   <!-- Bootstrap Core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-  <!-- Scrolling Nav JavaScript -->
+  <!-- Load jQuery easing script -->
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  
+  <!-- Scrolling Nav JavaScript -->
   <script type="text/javascript" src="js/scrolling-nav.js"></script>
+  
+  <!-- Load Parallax script -->
+  <script type="text/javascript" src="js/parallax.js"></script>
 
   <!-- Contact Form JavaScript -->
   <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
@@ -611,6 +616,7 @@ require('cms/includes/config.php');
   <script type="text/javascript" src="js/floatlabel.js"></script>
   <script type="text/javascript" src="js/groovy.js"></script>
 
+  
 </body>
 
 </html>
