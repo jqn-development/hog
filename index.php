@@ -26,8 +26,9 @@ require('cms/includes/config.php');
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
   <!-- Custom CSS -->
-  <link href="css/groovy.css" rel="stylesheet" type="text/css">
+  <!-- <link href="css/groovy.css" rel="stylesheet" type="text/css"> -->
   <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
 
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700' rel='stylesheet' type='text/css'>
@@ -365,7 +366,7 @@ require('cms/includes/config.php');
   <footer>
     <div class="container text-center">
       <p>
-        Copyright &copy; House of Groove DJ 2015 <span><a href="http://www.betwinsouls.com">Powered by jQN.io</a></span>
+        Copyright &copy; <?php echo date("Y"); ?> House of Groove DJ <span><a href="http://jqn.io">Powered by jQN.io</a></span>
       </p>
     </div>
   </footer>
