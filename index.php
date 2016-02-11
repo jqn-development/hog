@@ -26,9 +26,6 @@
   <link href="css/groovy.css" rel="stylesheet" type="text/css">
   <link href="css/reset.css" rel="stylesheet" type="text/css">
 
-  <!-- Libraries -->
-  <link href="css/animate.css" rel="stylesheet" href="css/animate.css">
-
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700' rel='stylesheet' type='text/css'>
 
@@ -40,17 +37,6 @@
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-66915465-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
 
 </head>
 
@@ -105,9 +91,9 @@
     <div class="intro-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 wow" >
+          <div class="col-lg-12">
             <img src="img/hoglogo.png" class="img-responsive center-block" alt="Responsive image" />
-            <a href="#about" class="btn btn-circle page-scroll">
+            <a href="#about" class="btn btn-circle page-scroll" >
               <i class="fa fa-angle-double-down animated"></i>
             </a>
           </div>
@@ -133,11 +119,11 @@
               please contact us.
             </p>
           </div>
-          <div class="col-lg-6 wow fadeIn" data-wow-delay=".25s">
+          <div class="col-lg-6">
             <img src="img/dj-luda.jpg"/>
           </div>
         </div>
-        <div class="row hog-grid wow fadeIn" data-wow-delay=".35s">
+        <div class="row hog-grid">
           <div class="col-md-4 col-sm-6">
             <img src="img/hog-dance.jpg" />
           </div>
@@ -157,10 +143,10 @@
     <div class="services-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 wow fadeIn">
+          <div class="col-lg-12">
             <h1>Services</h1>
           </div>
-          <div class="col-lg-12 text-justify wow fadeIn" data-wow-delay=".25s">
+          <div class="col-lg-12 text-justify">
             <p>
               In your search to find a Wedding DJ, you have only one chance to get it right.
               A great DJ will invest many more hours into the planning & preparation of
@@ -195,7 +181,7 @@
 
   <!-- Testimonials section -->
   <section class="testimonials-section no-padding" id="testimonials">
-    <div class="testimonials-body wow fadeIn" data-wow-delay=".35s">
+    <div class="testimonials-body">
       <div class="container-fluid">
         <div class="row no-gutter">
           <div class="col-lg-12">
@@ -306,7 +292,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 wow fadeIn" data-wow-delay=".45s">
+          <div class="col-lg-8 col-lg-offset-2">
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls text-left">
@@ -356,10 +342,10 @@
     <div class="social-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 wow fadeIn" data-wow-delay=".10s">
+          <div class="col-lg-12">
             <h1>719-937-65DJ</h1>
-            <p class="hog-brand wow fadeIn" data-wow-delay=".25s">Contact <span>House of Groove DJ</span> to book your next event.</p>
-            <a href="https://www.facebook.com/houseofgrooveprodj" class="btn btn-default btn-lg wow fadeIn" target="_blank" data-wow-delay=".35s">
+            <p class="hog-brand">Contact <span>House of Groove DJ</span> to book your next event.</p>
+            <a href="https://www.facebook.com/houseofgrooveprodj" class="btn btn-default btn-lg" target="_blank">
               <i class="fa fa-facebook-square fa-fw"></i><span class="network-name">Follow us on Facebook</span>
             </a>
           </div>
@@ -616,10 +602,6 @@
 
   <!-- Custom Theme JavaScript -->
   <script type="text/javascript" src="js/floatlabel.js"></script>
-  <script type="text/javascript" src="js/wow.js"></script>
-  
-  <!-- Initialize WOW.js -->
-  <script> new WOW().init(); </script>
 
 </body>
 

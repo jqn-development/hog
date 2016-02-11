@@ -15,7 +15,7 @@ if(logged_in()) {header('Location: '.DIRADMIN);}
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title><?php echo SITETITLE;?></title>
-<link rel="stylesheet" href="<?php echo DIR;?>cms/style/login.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo DIR;?>style/login.css" type="text/css" />
 </head>
 <body>
 <div class="lwidth">
@@ -28,7 +28,7 @@ if(logged_in()) {header('Location: '.DIRADMIN);}
 		}
 		?>
 
-<div id="login" class="col-lg-12">
+<div id="login">
 	<p><?php echo messages();?></p>
 	<form method="post" action="">
 	<p><label><strong>Username</strong><input type="text" name="username" /></label></p>

@@ -33,7 +33,7 @@ if(isset($_GET['delpage'])){
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo SITETITLE;?></title>
-<link href="<?php echo DIR;?>cms/style/style.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo DIR;?>style/style.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" type="text/javascript">
 	function delpage(id, title)
 	{
@@ -81,12 +81,12 @@ while($row = mysql_fetch_object($sql))
 {
 	echo "<tr>";
 		echo "<td>$row->pageTitle</td>";
-		// if($row->pageID == 1){ //home page hide the delete link
-		// 	echo "<td><a href=\"".DIRADMIN."editpage.php?id=$row->pageID\">Edit</a></td>";
-		// } else {
-		// 	echo "<td><a href=\"".DIRADMIN."editpage.php?id=$row->pageID\">Edit</a> | <a href=\"javascript:delpage('$row->pageID','$row->pageTitle');\">Delete</a></td>";
-		// }
-		echo "<td><a href=\"".DIRADMIN."editpage.php?id=$row->pageID\">Edit</a> | <a href=\"javascript:delpage('$row->pageID','$row->pageTitle');\">Delete</a></td>";
+		if($row->pageID == 1){ //home page hide the delete link
+			echo "<td><a href=\"".DIRADMIN."editpage.php?id=$row->pageID\">Edit</a></td>";
+		} else {
+			echo "<td><a href=\"".DIRADMIN."editpage.php?id=$row->pageID\">Edit</a> | <a href=\"javascript:delpage('$row->pageID','$row->pageTitle');\">Delete</a></td>";
+		}
+
 	echo "</tr>";
 }
 ?>
@@ -96,7 +96,7 @@ while($row = mysql_fetch_object($sql))
 </div>
 
 <div id="footer">
-	<div class="copy">&copy; <?php echo SITETITLE.' '. date('Y');?> </div>
+		<div class="copy">&copy; <?php echo SITETITLE.' '. date('Y');?> </div>
 </div><!-- close footer -->
 </div><!-- close wrapper -->
 

@@ -10,7 +10,11 @@
 ob_start();
 session_start();
 
-
+// db properties
+define('DBHOST','db574413207.db.1and1.com');
+define('DBUSER','dbo574413207');
+define('DBPASS','kino1708');
+define('DBNAME','db574413207');
 
 // make a connection to mysql here
 $conn = @mysql_connect (DBHOST, DBUSER, DBPASS);
@@ -20,7 +24,7 @@ if(!$conn){
 }
 
 // define site path
-define('DIR','http://www.houseofgroovedj.com/');
+define('DIR','http://www.houseofgroovedj.com/cms/');
 
 // define admin site path
 define('DIRADMIN','http://www.houseofgroovedj.com/cms/admin/');
