@@ -26,6 +26,9 @@
   <link href="css/groovy.css" rel="stylesheet" type="text/css">
   <link href="css/reset.css" rel="stylesheet" type="text/css">
 
+  <!-- Libraries -->
+  <link href="css/animate.css" rel="stylesheet" href="css/animate.css">
+
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700' rel='stylesheet' type='text/css'>
 
@@ -91,7 +94,7 @@
     <div class="intro-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 wow fadeIn" data-wow-delay=".25s">
             <img src="img/hoglogo.png" class="img-responsive center-block" alt="Responsive image" />
             <a href="#about" class="btn btn-circle page-scroll" >
               <i class="fa fa-angle-double-down animated"></i>
@@ -119,11 +122,11 @@
               please contact us.
             </p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay=".25s">
             <img src="img/dj-luda.jpg"/>
           </div>
         </div>
-        <div class="row hog-grid">
+        <div class="row hog-grid wow fadeIn" data-wow-delay=".35s">
           <div class="col-md-4 col-sm-6">
             <img src="img/hog-dance.jpg" />
           </div>
@@ -143,10 +146,10 @@
     <div class="services-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 wow fadeIn">
             <h1>Services</h1>
           </div>
-          <div class="col-lg-12 text-justify">
+          <div class="col-lg-12 text-justify wow fadeInRight" data-wow-delay=".25s">
             <p>
               In your search to find a Wedding DJ, you have only one chance to get it right.
               A great DJ will invest many more hours into the planning & preparation of
@@ -181,7 +184,7 @@
 
   <!-- Testimonials section -->
   <section class="testimonials-section no-padding" id="testimonials">
-    <div class="testimonials-body">
+    <div class="testimonials-body wow fadeIn" data-wow-delay=".35s">
       <div class="container-fluid">
         <div class="row no-gutter">
           <div class="col-lg-12">
@@ -292,7 +295,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-lg-8 col-lg-offset-2 wow fadeIn" data-wow-delay=".45s">
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls text-left">
@@ -342,10 +345,10 @@
     <div class="social-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 wow fadeIn" data-wow-delay=".10s">
             <h1>719-937-65DJ</h1>
-            <p class="hog-brand">Contact <span>House of Groove DJ</span> to book your next event.</p>
-            <a href="https://www.facebook.com/houseofgrooveprodj" class="btn btn-default btn-lg" target="_blank">
+            <p class="hog-brand wow fadeIn" data-wow-delay=".25s">Contact <span>House of Groove DJ</span> to book your next event.</p>
+            <a href="https://www.facebook.com/houseofgrooveprodj" class="btn btn-default btn-lg wow fadeIn" target="_blank" data-wow-delay=".35s">
               <i class="fa fa-facebook-square fa-fw"></i><span class="network-name">Follow us on Facebook</span>
             </a>
           </div>
@@ -602,6 +605,10 @@
 
   <!-- Custom Theme JavaScript -->
   <script type="text/javascript" src="js/floatlabel.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  
+  <!-- Initialize WOW.js -->
+  <script> new WOW().init(); </script>
 
 </body>
 
