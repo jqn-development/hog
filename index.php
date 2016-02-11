@@ -1,6 +1,3 @@
-<?php 
-require('cms/includes/config.php'); 
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +25,9 @@ require('cms/includes/config.php');
   <!-- Custom CSS -->
   <link href="css/groovy.css" rel="stylesheet" type="text/css">
   <link href="css/reset.css" rel="stylesheet" type="text/css">
+
+  <!-- Libraries -->
+  <link href="css/animate.css" rel="stylesheet" href="css/animate.css">
 
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700' rel='stylesheet' type='text/css'>
@@ -105,7 +105,7 @@ require('cms/includes/config.php');
     <div class="intro-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 wow fadeIn" data-wow-delay=".25s">
             <img src="img/hoglogo.png" class="img-responsive center-block" alt="Responsive image" />
             <a href="#about" class="btn btn-circle page-scroll" >
               <i class="fa fa-angle-double-down animated"></i>
@@ -123,19 +123,21 @@ require('cms/includes/config.php');
         <div class="row">
           <div class="col-lg-6 hog-welcome">
             <h1>Welcome</h1>
-            <?php
-            $about = mysql_query("SELECT * FROM pages WHERE pageID='2'");
-
-            $about_section = mysql_fetch_object($about);
-
-            echo '<p>' . $about_section->pageCont . '</p>';
-            ?>
+            <p>
+              Thank you for visiting our webpage. We know how important
+              choosing a DJ is and we pride ourselves with 25 years combined
+              experience in the wedding and entertainment industry. We are
+              a member of the <span class="bbb">BBB</span> with an A rating and carry
+              liability insurance for all venues. We service Colorado Springs,
+              Denver and all surrounding areas. For availability and bookings
+              please contact us.
+            </p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay=".25s">
             <img src="img/dj-luda.jpg"/>
           </div>
         </div>
-        <div class="row hog-grid">
+        <div class="row hog-grid wow fadeIn" data-wow-delay=".35s">
           <div class="col-md-4 col-sm-6">
             <img src="img/hog-dance.jpg" />
           </div>
@@ -155,17 +157,17 @@ require('cms/includes/config.php');
     <div class="services-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 wow fadeIn">
             <h1>Services</h1>
           </div>
-          <div class="col-lg-12 text-justify">
-            <?php
-            $services = mysql_query("SELECT * FROM pages WHERE pageID='2'");
-
-            $services_section = mysql_fetch_object($services);
-
-            echo '<p>' . $services_section->pageCont . '</p>';
-            ?>
+          <div class="col-lg-12 text-justify wow fadeInRight" data-wow-delay=".25s">
+            <p>
+              In your search to find a Wedding DJ, you have only one chance to get it right.
+              A great DJ will invest many more hours into the planning & preparation of
+              your big day. A lot of the weddings we've been part of, have been 4-6 hours from
+              start to finish, yet often required 20 or more hours to prepare for.<br/>
+              We have what it takes to make your special event a success!
+            </p>
           </div>
         </div>
         <div class="row services-list">
@@ -193,7 +195,7 @@ require('cms/includes/config.php');
 
   <!-- Testimonials section -->
   <section class="testimonials-section no-padding" id="testimonials">
-    <div class="testimonials-body">
+    <div class="testimonials-body wow fadeIn" data-wow-delay=".35s">
       <div class="container-fluid">
         <div class="row no-gutter">
           <div class="col-lg-12">
@@ -304,7 +306,7 @@ require('cms/includes/config.php');
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-lg-8 col-lg-offset-2 wow fadeIn" data-wow-delay=".45s">
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls text-left">
@@ -354,16 +356,10 @@ require('cms/includes/config.php');
     <div class="social-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 wow fadeIn" data-wow-delay=".10s">
             <h1>719-937-65DJ</h1>
-            <?php
-              $social = mysql_query("SELECT * FROM pages WHERE pageID='4'");
-
-              $social_section = mysql_fetch_object($social);
-
-              echo '<p class="hog-brand">' . $social_section->pageCont . '</p>';
-            ?>
-            <a href="https://www.facebook.com/houseofgrooveprodj" class="btn btn-default btn-lg" target="_blank">
+            <p class="hog-brand wow fadeIn" data-wow-delay=".25s">Contact <span>House of Groove DJ</span> to book your next event.</p>
+            <a href="https://www.facebook.com/houseofgrooveprodj" class="btn btn-default btn-lg wow fadeIn" target="_blank" data-wow-delay=".35s">
               <i class="fa fa-facebook-square fa-fw"></i><span class="network-name">Follow us on Facebook</span>
             </a>
           </div>
@@ -376,7 +372,7 @@ require('cms/includes/config.php');
   <footer>
     <div class="container text-center">
       <p>
-        Copyright &copy; House of Groove DJ 2015 <span><a href="http://www.betwinsouls.com">Powered by jQN.io</a></span>
+        Copyright &copy; <?php date_default_timezone_set('UTC'); echo date("Y");?> House of Groove DJ <span><a href="http://jqn.io">Powered by jQN.io</a></span>
       </p>
     </div>
   </footer>
@@ -620,7 +616,10 @@ require('cms/includes/config.php');
 
   <!-- Custom Theme JavaScript -->
   <script type="text/javascript" src="js/floatlabel.js"></script>
-  <script type="text/javascript" src="js/groovy.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  
+  <!-- Initialize WOW.js -->
+  <script> new WOW().init(); </script>
 
 </body>
 
