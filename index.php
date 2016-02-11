@@ -26,6 +26,9 @@
   <link href="css/groovy.css" rel="stylesheet" type="text/css">
   <link href="css/reset.css" rel="stylesheet" type="text/css">
 
+  <!-- Libraries -->
+  <link href="css/animate.css" rel="stylesheet" href="css/animate.css">
+
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700' rel='stylesheet' type='text/css'>
 
@@ -102,7 +105,7 @@
     <div class="intro-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 wow fadeIn" data-wow-delay=".25s">
             <img src="img/hoglogo.png" class="img-responsive center-block" alt="Responsive image" />
             <a href="#about" class="btn btn-circle page-scroll" >
               <i class="fa fa-angle-double-down animated"></i>
@@ -130,15 +133,15 @@
               please contact us.
             </p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay=".25s">
             <img src="img/dj-luda.jpg"/>
           </div>
         </div>
-        <div class="row hog-grid">
-          <div class="col-md-4">
+        <div class="row hog-grid wow fadeIn" data-wow-delay=".35s">
+          <div class="col-md-4 col-sm-6">
             <img src="img/hog-dance.jpg" />
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6">
             <img src="img/hog-kiss.jpg" />
           </div>
           <div class="col-md-4">
@@ -154,10 +157,10 @@
     <div class="services-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 wow fadeIn">
             <h1>Services</h1>
           </div>
-          <div class="col-lg-12 text-justify">
+          <div class="col-lg-12 text-justify wow fadeInRight" data-wow-delay=".25s">
             <p>
               In your search to find a Wedding DJ, you have only one chance to get it right.
               A great DJ will invest many more hours into the planning & preparation of
@@ -168,20 +171,20 @@
           </div>
         </div>
         <div class="row services-list">
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-xs-6">
             <img src="icons/wedding-rings-diamond-64.png" alt="Weddings" />
             <p>Weddings</p>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-xs-6">
             <img src="icons/martini-64.png" alt="Parties" />
             <p>Private Parties</p>
           </div>
           <div class="clearfix visible-sm-block"></div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-xs-6">
             <img src="icons/prom-64.png" alt="Proms" />
             <p>Proms</p>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-xs-6">
             <img src="icons/suit-64.png" alt="Corporate Events" />
             <p>Corporate Events</p>
           </div>
@@ -191,105 +194,311 @@
   </section>
 
   <!-- Testimonials section -->
-  <section id="testimonials" class="testimonials-section">
-    <div class="testimonials-body">
-      <div class="container">
-        <div class="row">
+  <section class="testimonials-section no-padding" id="testimonials">
+    <div class="testimonials-body wow fadeIn" data-wow-delay=".35s">
+      <div class="container-fluid">
+        <div class="row no-gutter">
           <div class="col-lg-12">
             <h1>Testimonials</h1>
           </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="#testimonialModal1" class="testimonial-box" data-toggle="modal">
+              <img src="img/ashlea-ryan-thumb.jpg" class="img-responsive" alt="">
+              <div class="testimonial-box-caption">
+                <div class="testimonial-box-caption-content">
+                  <div class="couple text-faded">
+                    <p>Ashlea & Ryan</p>
+                  </div>
+                  <div class="wedding-date">
+                    <p>September 2014</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="#testimonialModal2" class="testimonial-box" data-toggle="modal">
+              <img src="img/samantha-kevin-thumb.jpg" class="img-responsive" alt="">
+              <div class="testimonial-box-caption">
+                <div class="testimonial-box-caption-content">
+                  <div class="couple text-faded">
+                    <p>Samantha & Kevin</p>
+                  </div>
+                  <div class="wedding-date">
+                    <p>June 2014</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="#testimonialModal3" class="testimonial-box" data-toggle="modal">
+              <img src="img/christy-victor-thumb.jpg" class="img-responsive" alt="">
+              <div class="testimonial-box-caption">
+                <div class="testimonial-box-caption-content">
+                  <div class="couple text-faded">
+                    <p>Christy & Victor</p>
+                  </div>
+                  <div class="wedding-date">
+                    <p>June 2013</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="#testimonialModal4" class="testimonial-box" data-toggle="modal">
+              <img src="img/tina-laszlo-thumb.jpg" class="img-responsive" alt="">
+              <div class="testimonial-box-caption">
+                <div class="testimonial-box-caption-content">
+                  <div class="couple text-faded">
+                    <p>Krisztina & Laszlo</p>
+                  </div>
+                  <div class="wedding-date">
+                    <p>March 2012</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="#testimonialModal5" class="testimonial-box" data-toggle="modal">
+              <img src="img/wes-viky-thumb.jpg" class="img-responsive" alt="">
+              <div class="testimonial-box-caption">
+                <div class="testimonial-box-caption-content">
+                  <div class="couple text-faded">
+                    <p>Wes & Viktoria</p>
+                  </div>
+                  <div class="wedding-date">
+                    <p>August 2011</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="#testimonialModal6" class="testimonial-box" data-toggle="modal">
+              <img src="img/nikol-bryan-thumb.jpg" class="img-responsive" alt="">
+              <div class="testimonial-box-caption">
+                <div class="testimonial-box-caption-content">
+                  <div class="couple text-faded">
+                    <p>Nikol & Bryan</p>
+                  </div>
+                  <div class="wedding-date">
+                    <p>May 2010</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-body">
+      <div class="container">
+        <div class="row">
           <div class="col-lg-12">
-            <h2>Read what our past clients have to say about House of Groove.</h2><br/>
+            <h1>Contact Us</h1>
           </div>
-          <div class="col-lg-12">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default" >
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h2 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                      Ashlea and Ryan - September 20th 2014
-                    </a>
-                  </h2>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse-in" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
-                    <div class="col-lg-6">
-                      <img src="img/ahls-wedding.jpg" class="img-responsive center-block" alt="Responsive image" />
-                    </div>
-                    <div class="col-lg-6">
-                      <p>
-                        I recommend House of Groove if you're looking for a DJ.
-                        They did our wedding on September 20th and did a fantastic job!
-                        We had a blast! They were organized and helped the night go smoothly...
-                        Even when I was a bit scatter brained lol, we had a great time!
-                      </p>
-                    </div>
-                  </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 wow fadeIn" data-wow-delay=".45s">
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls text-left">
+                  <label>Name</label>
+                  <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
                 </div>
               </div>
-              <div class="panel panel-default" >
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h2 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
-                    aria-expanded="false" aria-controls="collapseTwo">
-                    Samantha and Kevin - June 21st 2014
-                  </a>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                  <div class="col-lg-6">
-                    <img src="img/pellow-wedding.jpg" class="img-responsive center-block" alt="Responsive image" />
-                  </div>
-                  <div class="col-lg-6">
-                    <p>
-                      We had Ludwig of House of Groove do our wedding and it was amazing.
-                      He even made a mash up of songs for our first dance.
-                      I highly recommend using them for your wedding or other big functions.
-                    </p>
-                  </div>
+              <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls text-left">
+                  <label>Email Address</label>
+                  <input type="email" class="form-control" placeholder="Email Adress" id="email" required data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
                 </div>
               </div>
-            </div>
-            <div class="panel panel-default" >
-              <div class="panel-heading" role="tab" id="headingThree">
-                <h2 class="panel-title">
-                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  Christy and Victor - June 22nd 2013
-                </a>
-              </h2>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
-                <div class="col-lg-6">
-                  <img src="img/iacobbo-wedding.jpg" class="img-responsive center-block" alt="Responsive image" />
-                </div>
-                <div class="col-lg-6">
-                  <p>
-                    Luda and Serge went above and beyond our expectations.
-                    They were very professional, organized and personable.
-                    The light stage and sound quality was amazing!
-                    We were so happy our guests danced all night!!!
-                    He was open to all recommendations and his style of mixing genres was perfect.
-                    We highly recommend the House of Groove DJing services to any engaged couples
-                    in Colorado Springs! We love you, Luda!!!
-                  </p>
+              <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls text-left">
+                  <label>Phone Number</label>
+                  <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
                 </div>
               </div>
+              <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls text-left">
+                  <label>Message</label>
+                  <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="row">
+                <div class="form-group col-xs-12">
+                  <button type="submit" class="btn btn-danger btn-lg btn-lg">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Social Section -->
+  <section id="social" class="social-section">
+    <div class="social-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 wow fadeIn" data-wow-delay=".10s">
+            <h1>719-937-65DJ</h1>
+            <p class="hog-brand wow fadeIn" data-wow-delay=".25s">Contact <span>House of Groove DJ</span> to book your next event.</p>
+            <a href="https://www.facebook.com/houseofgrooveprodj" class="btn btn-default btn-lg wow fadeIn" target="_blank" data-wow-delay=".35s">
+              <i class="fa fa-facebook-square fa-fw"></i><span class="network-name">Follow us on Facebook</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container text-center">
+      <p>
+        Copyright &copy; <?php date_default_timezone_set('UTC'); echo date("Y");?> House of Groove DJ <span><a href="http://jqn.io">Powered by jQN.io</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Testimonials Modals -->
+  <div class="testimonial-modal modal fade" id="testimonialModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Ashlea & Ryan</h2>
+              <hr class="star-primary">
+              <img src="img/ashlea-ryan.jpg" class="img-responsive img-centered" alt="">
+              <p>
+                I recommend House of Groove if you're looking for a DJ.
+                They did our wedding on September 20th and did a fantastic job!
+                We had a blast! They were organized and helped the night go smoothly...
+                Even when I was a bit scatter brained lol, we had a great time!
+              </p>
+              <ul class="list-inline item-details">
+                <li>
+                  <strong>
+                    September 2014
+                  </strong>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFour">
-              <h2 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
-                aria-expanded="false" aria-controls="collapsefour">
-                Krisztina and Laszlo - March 2012
-              </a>
-            </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-modal modal fade" id="testimonialModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
           </div>
-          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div class="panel-body">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Samantha & Kevin</h2>
+              <hr class="star-primary">
+              <img src="img/samantha-kevin.jpg" class="img-responsive img-centered" alt="">
+              <p>
+                We had Ludwig of House of Groove do our wedding and it was amazing.
+                He even made a mash up of songs for our first dance.
+                I highly recommend using them for your wedding or other big functions.
+              </p>                            <ul class="list-inline item-details">
+                <li>
+                  <strong>
+                    June 2014
+                  </strong>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-modal modal fade" id="testimonialModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Christy & Victor</h2>
+              <hr class="star-primary">
+              <img src="img/christy-victor-thumb.jpg" class="img-responsive img-centered" alt="">
+              <p>
+                Luda and Serge went above and beyond our expectations.
+                They were very professional, organized and personable.
+                The light stage and sound quality was amazing!
+                We were so happy our guests danced all night!!!
+                He was open to all recommendations and his style of mixing genres was perfect.
+                We highly recommend the House of Groove DJing services to any engaged couples
+                in Colorado Springs! We love you, Luda!!!
+              </p>
+              <ul class="list-inline item-details">
+                <li>
+                  <strong>
+                    June 2013
+                  </strong>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-modal modal fade" id="testimonialModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Krisztina & Laszlo</h2>
+              <hr class="star-primary">
+              <img src="img/tina-laszlo.jpg" class="img-responsive img-centered" alt="">
               <p>
                 Our special day couldn't have been more perfect thanks to Ludwig and Serg!
                 We knew we had made the right decision to hire House of Groove Entertainment
@@ -298,184 +507,119 @@
                 to our dreams with his utmost attention and was just as excited as we were to make
                 our wedding unforgettable.
               </p>
-            </div>
-          </div>
-          <div class="panel panel-default" >
-            <div class="panel-heading" role="tab" id="headingFive">
-              <h2 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
-                aria-expanded="false" aria-controls="collapseTwo">
-                Steve and Liz Rael - May 2012
-              </a>
-            </h2>
-          </div>
-          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-            <div class="panel-body">
-              <p>
-                On May 19 my husband Steve and I hosted a party for our daughter and her friend.
-                It was a combined birthday and graduation party. We had good food and great friends
-                over to celebrate. But, what made it the party of all parties was DJ Ludwig.
-                We must have danced from 6pm until 10:30pm and we have the pictures to prove it.
-              </p>
+              <ul class="list-inline item-details">
+                <li>
+                  <strong>
+                    March 2012
+                  </strong>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
           </div>
         </div>
-        <div class="panel panel-default" >
-          <div class="panel-heading" role="tab" id="headingSix">
-            <h2 class="panel-title">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
-              aria-expanded="false" aria-controls="collapseThree">
-              Wes and Viktoria - August 2011
-            </a>
-          </h2>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-modal modal fade" id="testimonialModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
         </div>
-        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-          <div class="panel-body">
-            <div class="col-lg-6">
-              <img src="img/stull-wedding.jpg" class="img-responsive center-block" alt="Responsive image" />
-            </div>
-            <div class="col-lg-6">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Wes & Viktoria</h2>
+              <hr class="star-primary">
+              <img src="img/wes-viky.jpg" class="img-responsive img-centered" alt="">
               <p>
                 We were fortunate to have both Luda and Serg as our DJs in our Wedding Party.
                 They both were very professional, punctual, friendly and helpful! They played the
                 best songs to keep the party going, and listened to all of our requests.
                 I would highly recommend them to everybody who's about to have any kind of party and want
-                professionalism, DJ's with great personalities and a FUN night!! Wes and Viktoria stull + family
+                professionalism, DJ's with great personalities and a FUN night!! Wes and Viktoria stull + family.
               </p>
+              <ul class="list-inline item-details">
+                <li>
+                  <strong>
+                    August 2011
+                  </strong>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingSeven">
-          <h2 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"
-            aria-expanded="false" aria-controls="collapseSeven">
-            Nikol and Bryan - May 2010
-          </a>
-        </h2>
-      </div>
-      <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-        <div class="panel-body">
-          <p>
-            We We got married May 22nd, 2010 and Luda was our DJ. He was very punctual,
-            and dressed nicely for our formal event. He was also easy to work with.
-            He was unobtrusive, and was willing to do as much or as little emceeing
-            as we wanted. We were able to provide him with a specially mixed version
-            of our 1st dance song, and he had a great selection of family-friendly tunes
-            he used to keep people on the dance floor all night. We couldn't have been happier
-            with our choice, and would highly recommend using DJ Luda to anyone who has an event to plan.
-            <br/>
-            Thank you, House of Groove!
-          </p>
-        </div>
-      </div>
     </div>
   </div>
-</div>
-</div>
-</div>
-
-</div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-  <div class="contact-body">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>Contact Us</h1>
+  <div class="testimonial-modal modal fade" id="testimonialModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <form name="sentMessage" id="contactForm" novalidate>
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls text-left">
-                <label>Name</label>
-                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                <p class="help-block text-danger"></p>
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Nikol & Bryan</h2>
+              <hr class="star-primary">
+              <img src="img/nikol-bryan.jpg" class="img-responsive img-centered" alt="">
+              <p>
+                We We got married May 22nd, 2010 and Luda was our DJ. He was very punctual,
+                and dressed nicely for our formal event. He was also easy to work with.
+                He was unobtrusive, and was willing to do as much or as little emceeing
+                as we wanted. We were able to provide him with a specially mixed version
+                of our 1st dance song, and he had a great selection of family-friendly tunes
+                he used to keep people on the dance floor all night. We couldn't have been happier
+                with our choice, and would highly recommend using DJ Luda to anyone who has an event to plan.
+                <br/>
+                Thank you, House of Groove!
+              </p>
+              <ul class="list-inline item-details">
+                <li>
+                  <strong>
+                    May 2010
+                  </strong>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls text-left">
-                <label>Email Address</label>
-                <input type="email" class="form-control" placeholder="Email Adress" id="email" required data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls text-left">
-                <label>Phone Number</label>
-                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls text-left">
-                <label>Message</label>
-                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <br>
-            <div id="success"></div>
-            <div class="row">
-              <div class="form-group col-xs-12">
-                <button type="submit" class="btn btn-danger btn-lg btn-lg">Send</button>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-</section>
+  <!-- End Modal content-->
 
-<!-- Social Section -->
-<section id="social" class="social-section">
-  <div class="social-body">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>719-937-65DJ</h1>
-          <p class="hog-brand">Contact <span>House of Groove DJ</span> to book your next event.</p>
-          <a href="https://www.facebook.com/houseofgrooveprodj" class="btn btn-default btn-lg" target="_blank">
-            <i class="fa fa-facebook-square fa-fw"></i><span class="network-name">Follow us on Facebook</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- jQuery Version 1.11.0 -->
+  <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 
-<!-- footer -->
-<footer>
-  <div class="container text-center">
-    <p>
-      Copyright &copy; House of Groove DJ 2015 <span><a href="http://www.betwinsouls.com">Powered by jQN.io</a></span>
-    </p>
-  </div>
-</footer>
+  <!-- Bootstrap Core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-<!-- jQuery Version 1.11.0 -->
-<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+  <!-- Scrolling Nav JavaScript -->
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/scrolling-nav.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- Contact Form JavaScript -->
+  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+  <script type="text/javascript" src="js/contact-me.js"></script>
 
-<!-- Scrolling Nav JavaScript -->
-<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="js/scrolling-nav.js"></script>
-
-<!-- Contact Form JavaScript -->
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-<script type="text/javascript" src="js/contact-me.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script type="text/javascript" src="js/floatlabel.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script type="text/javascript" src="js/floatlabel.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  
+  <!-- Initialize WOW.js -->
+  <script> new WOW().init(); </script>
 
 </body>
 
