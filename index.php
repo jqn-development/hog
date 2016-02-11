@@ -107,7 +107,7 @@
         <div class="row">
           <div class="col-lg-12">
             <img src="img/hoglogo.png" class="img-responsive center-block" alt="Responsive image" />
-            <a href="#about" class="btn btn-circle page-scroll wow fadeIn" data-wow-delay="25s">
+            <a href="#about" class="btn btn-circle page-scroll">
               <i class="fa fa-angle-double-down animated"></i>
             </a>
           </div>
