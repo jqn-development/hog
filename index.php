@@ -358,7 +358,7 @@
   <footer>
     <div class="container text-center">
       <p>
-        Copyright &copy; House of Groove DJ 2015 <span><a href="http://www.betwinsouls.com">Powered by jQN.io</a></span>
+        Copyright &copy; <?php date_default_timezone_set('UTC'); echo date("Y");?> House of Groove DJ <span><a href="http://jqn.io">Powered by jQN.io</a></span>
       </p>
     </div>
   </footer>
