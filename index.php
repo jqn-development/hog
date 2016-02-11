@@ -105,7 +105,7 @@
     <div class="intro-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 wow jello" data-wow-delay="25s">
+          <div class="col-lg-12 wow" >
             <img src="img/hoglogo.png" class="img-responsive center-block" alt="Responsive image" />
             <a href="#about" class="btn btn-circle page-scroll">
               <i class="fa fa-angle-double-down animated"></i>
