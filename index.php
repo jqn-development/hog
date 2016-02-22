@@ -90,11 +90,11 @@
   </nav>
 
   <!-- Intro Section -->
-  <section id="intro" class="intro-section">
+  <section id="intro" class="intro-section" data-mtphr-parallax-speed="6" >
     <div class="intro-body">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 wow fadeIn" data-wow-delay=".25s">
+          <div class="col-lg-12">
             <img src="img/hoglogo.png" class="img-responsive center-block" alt="Responsive image" />
             <a href="#about" class="btn btn-circle page-scroll" >
               <i class="fa fa-angle-double-down animated"></i>
@@ -606,7 +606,9 @@
   <!-- Custom Theme JavaScript -->
   <script type="text/javascript" src="js/floatlabel.js"></script>
   <script type="text/javascript" src="js/wow.js"></script>
-  
+  <!-- Load Parallax script -->
+	<script type="text/javascript" src="js/mtphr-parallax.js"></script>
+
   <!-- Initialize WOW.js -->
   <script> new WOW().init(); </script>
 
