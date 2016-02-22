@@ -90,7 +90,7 @@
   </nav>
 
   <!-- Intro Section -->
-  <section id="intro" class="intro-section" data-mtphr-parallax-speed="6" >
+  <section id="intro" class="intro-section metphr-rotator" >
     <div class="intro-body">
       <div class="container">
         <div class="row">
@@ -611,6 +611,40 @@
 
   <!-- Initialize WOW.js -->
   <script> new WOW().init(); </script>
+
+  <script type="text/javascript">
+
+  <script type="text/javascript">
+
+		jQuery( document ).ready( function($) {
+
+			// Setup strict mode
+			(function() {
+
+		    "use strict";
+
+
+
+				/* --------------------------------------------------------- */
+				/* !Setup parallax elements */
+				/* --------------------------------------------------------- */
+
+				$('html.no-touch #intro').find('.mtphr-rotator-resource').mtphr_parallax();
+
+			  /* --------------------------------------------------------- */
+				/* !Setup WOW */
+				/* --------------------------------------------------------- */
+
+				var wow = new WOW({
+					offset: 150,
+					mobile: false
+				});
+				wow.init();
+
+			}());
+
+		});
+
 
 </body>
 
