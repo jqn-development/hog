@@ -161,20 +161,20 @@
         </div>
         <div class="row services-list">
           <div class="col-md-3 col-sm-6 col-xs-6">
-            <img src="icons/wedding-rings-diamond-64.png" alt="Weddings" />
+            <img src="img/wedding-rings-diamond-64.png" alt="Weddings" />
             <p>Weddings</p>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-6">
-            <img src="icons/martini-64.png" alt="Parties" />
+            <img src="img/martini-64.png" alt="Parties" />
             <p>Private Parties</p>
           </div>
           <div class="clearfix visible-sm-block"></div>
           <div class="col-md-3 col-sm-6 col-xs-6">
-            <img src="icons/prom-64.png" alt="Proms" />
+            <img src="img/prom-64.png" alt="Proms" />
             <p>Proms</p>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-6">
-            <img src="icons/suit-64.png" alt="Corporate Events" />
+            <img src="img/suit-64.png" alt="Corporate Events" />
             <p>Corporate Events</p>
           </div>
         </div>
